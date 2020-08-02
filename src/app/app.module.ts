@@ -9,12 +9,13 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutes } from './app.routing';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, NGMaterialModule, RouterModule.forChild(AppRoutes) ],
+  imports:      [ BrowserModule, FormsModule, NGMaterialModule, HttpClientModule, RouterModule.forRoot(AppRoutes) ],
   declarations: [ AppComponent, HelloComponent, HeaderComponent,  SidebarComponent ],
   bootstrap:    [ AppComponent ]
   ,exports:[ RouterModule ]

@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { UsersComponent } from './users/users.component';
 import { PostsComponent } from './posts/posts.component';
 import { Routes, RouterModule } from '@angular/router';
-import { BlogRouting } from './blog.routing';
+import { routes } from './blog.routing';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   imports: [
-    CommonModule, RouterModule.forChild(BlogRouting)
+    CommonModule, HttpClientModule, RouterModule.forChild(routes)
   ],
   declarations: [UsersComponent, PostsComponent]
   ,exports:[RouterModule]

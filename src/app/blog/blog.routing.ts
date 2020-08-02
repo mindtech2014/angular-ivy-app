@@ -3,7 +3,7 @@ import {ModuleWithProviders} from '@angular/core';
 import { UsersComponent } from './users/users.component';
 import { PostsComponent } from './posts/posts.component';
 
-const routes: Routes = [
+export const routes: Routes = [
     {
         path: '',
         component: UsersComponent,
@@ -18,4 +18,3 @@ const routes: Routes = [
     }
 ];
 
-export const BlogRouting: Routes = RouterModule.forChild(routes);
