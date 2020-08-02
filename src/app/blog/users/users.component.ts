@@ -22,4 +22,11 @@ export class UsersComponent implements OnInit {
     this.userService.getUsers().subscribe(users=> this.users = users);
   }
 
+  public userSelected(user:User):void{
+    console.log(user);
+  }
+ clickMessage = '';
+   onClickMe() {
+    this.clickMessage = 'You are my hero!';
+  }
 }
