@@ -13,7 +13,7 @@ export const routes: Routes = [
         component: UsersComponent,
     },
     {
-        path: 'posts',
+        path: 'posts/:userId',
         component: PostsComponent,
     }
 ];

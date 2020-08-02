@@ -1,1 +1,15 @@
-<h5>post</h5>
+<h2>Posts</h2>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Title</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let post of posts" (click)="postSelected(post)">
+      <th scope="row">{{post.id}}</th>
+      <td >{{post.title}}</td>
+    </tr>
+  </tbody>
+</table>
