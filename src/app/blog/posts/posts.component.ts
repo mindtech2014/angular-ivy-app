@@ -19,7 +19,7 @@ export class PostsComponent implements OnInit {
     this.route.queryParams.subscribe(params => {
     this.userId = params['userId'];
     console.log(this.userId);
-    this.getPosts
+    this.getPosts()
   });
   }
 
