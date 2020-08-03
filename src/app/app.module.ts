@@ -10,12 +10,13 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutes } from './app.routing';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, NGMaterialModule, HttpClientModule, RouterModule.forRoot(AppRoutes) ],
+  imports:      [ BrowserModule, FormsModule, NGMaterialModule, HttpClientModule, RouterModule.forRoot(AppRoutes), BrowserAnimationsModule ],
   declarations: [ AppComponent, HelloComponent, HeaderComponent,  SidebarComponent ],
   bootstrap:    [ AppComponent ]
   ,exports:[ RouterModule ]

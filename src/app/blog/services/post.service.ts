@@ -14,4 +14,8 @@ export class PostService {
     // TODO: send the message _after_ fetching the heroes
     return this.httpClient.get<Post[]>(this.url+"?userid"+userId);
   }
+
+  createPost(post:Post): Observable<any>{
+    return this.httpClient.post<any>(this.url, post);
+  }
 }
