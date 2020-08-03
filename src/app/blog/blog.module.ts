@@ -5,12 +5,13 @@ import { PostsComponent } from './posts/posts.component';
 import { Routes, RouterModule } from '@angular/router';
 import { routes } from './blog.routing';
 import { HttpClientModule } from '@angular/common/http';
+import { PostCreateComponent } from './posts/post-create/post-create.component';
 
 @NgModule({
   imports: [
     CommonModule, HttpClientModule, RouterModule.forChild(routes)
   ],
-  declarations: [UsersComponent, PostsComponent]
+  declarations: [UsersComponent, PostsComponent, PostCreateComponent]
   ,exports:[RouterModule]
 })
 export class BlogModule { }
